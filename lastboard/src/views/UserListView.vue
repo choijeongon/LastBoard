@@ -2,7 +2,7 @@
   <div>
     <h1 class="underline">사용자 목록</h1>
     <div style="text-align: right">
-      <button @click="movePage">회원가입</button>
+      <button @click="movePage">회원가입 페이지</button>
     </div>
     <div v-if="users.length">
       <table id="user-list">

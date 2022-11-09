@@ -14,7 +14,7 @@
       <input type="text" v-model="email_domain" ref="email_domain" /><br />
       <br />
       <button @click="checkValue">등록</button>
-      <button @click="moveList">목록</button>
+      <!-- <button @click="moveList">목록</button> -->
     </div>
   </div>
 </template>
