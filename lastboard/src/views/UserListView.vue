@@ -50,7 +50,15 @@ export default {
       users: [],
     };
   },
-  created() {},
+  created() {
+    fetch("http://localhost:8081/lastboard/user/list", {
+      method: "get",
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        this.users = data;
+      });
+  },
   methods: {
     movePage() {
       this.$router.push({ path: "/signup" });
