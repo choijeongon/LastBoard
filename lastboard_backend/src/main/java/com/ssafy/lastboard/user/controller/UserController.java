@@ -24,9 +24,6 @@ public class UserController {
 	@PostMapping("/signup")
 	public ResponseEntity<String> signUp(@RequestBody UserDTO userDto){
 		try {
-			System.out.println("유저 정보");
-			System.out.println(userDto);
-			System.out.println("---------------------------------");
 			userService.signUp(userDto);
 			return new ResponseEntity<String>("success", HttpStatus.OK);
 		} catch(Exception e) {
